@@ -229,9 +229,20 @@ def _seed():
         db.upsert_incident(inc)
 
 
+import os
+
 if __name__ == "__main__":
-    threading.Timer(1.5, lambda: webbrowser.open("http://localhost:5000")).start()
-    print("\nðŸ›¡ï¸  SentinelIQ â€” AI Threat Reconstruction Platform")
-    print("ðŸ“¡  Opening http://localhost:5000")
-    print("â¹ï¸   Press Ctrl+C to stop\n")
-    app.run(debug=False, port=5000, host="0.0.0.0")
+    port = int(os.environ.get("PORT", 5000))
+
+    # Only open browser locally, not on Render
+    if os.environ.get("RENDER") is None:
+        threading.Timer(
+            1.5,
+            lambda: webbrowser.open(f"http://localhost:{port}")
+        ).start()
+
+        print("\n🛡️ SentinelIQ — AI Threat Reconstruction Platform")
+        print(f"📡 Opening http://localhost:{port}")
+        print("⏹️ Press Ctrl+C to stop\n")
+
+    app.run(debug=False, host="0.0.0.0", port=port)
