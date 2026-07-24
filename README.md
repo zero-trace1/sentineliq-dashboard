@@ -192,7 +192,7 @@ Generates incident reports containing:
 Clone the repository
 
 ```bash
-[(https://github.com/zero-trace1/sentineliq-dashboard.git)]
+[https://github.com/zero-trace1/sentineliq-dashboard.git]
 cd SentinelIQ
 ```
 
