@@ -93,7 +93,6 @@ Applies security rules to identify suspicious activities.
 * Potential Malware Activity
 * Unauthorized Access Attempts
 
----
 
 ### 🔗 Correlation Engine (`correlator.py`)
 
@@ -109,7 +108,6 @@ flowchart TD
 
 This significantly reduces alert fatigue and improves investigation efficiency.
 
----
 
 ### 🤖 AI Analyst (`ai_analyst.py`)
 
@@ -127,7 +125,7 @@ Rule 101 Triggered
 
 > **Note:** This module calls an external LLM API to generate explanations. You'll need to supply your own API key — see [Configuration](#-configuration) below.
 
----
+
 
 ### 💾 Database (`database.py`)
 
@@ -145,7 +143,6 @@ Current database:
 SQLite (sentineliq.db)
 ```
 
----
 
 ### 📊 Dashboard (`app.py` + `dashboard.html`)
 
@@ -159,13 +156,11 @@ The Flask dashboard provides a centralized interface for monitoring security eve
 * Incident Timeline
 * Security Status
 
----
 
 ### 📧 Email Alerts (`emailer.py`)
 
 Automatically notifies administrators whenever critical incidents are detected. Requires SMTP credentials — see [Configuration](#-configuration).
 
----
 
 ### 📝 Report Generator (`report_generator.py`)
 
@@ -178,7 +173,6 @@ Generates incident reports containing:
 * AI Explanation
 * Recommended Actions
 
----
 
 ## 🛠️ Tech Stack
 
@@ -191,7 +185,7 @@ Generates incident reports containing:
 | CSS3       | Styling                   |
 | JavaScript | Client-side Interactivity |
 
----
+
 
 ## 🚀 Installation
 
@@ -240,7 +234,6 @@ Open your browser
 http://127.0.0.1:5000
 ```
 
----
 
 ## 🔐 Configuration
 
@@ -259,23 +252,7 @@ SMTP_PASSWORD=your_app_password
 ALERT_RECIPIENT=admin@example.com
 ```
 
-> ⚠️ Never commit your `.env` file. Add it to `.gitignore` before pushing to a public repository.
 
----
-
-## 📸 Screenshots
-
-| Dashboard | AI Incident Analysis |
-|---|---|
-| ![Dashboard](screenshots/dashboard.png) | ![AI Analysis](screenshots/ai-analysis.png) |
-
-| Active Alerts | Incident Report |
-|---|---|
-| ![Alerts](screenshots/alerts.png) | ![Incident Report](screenshots/incident-report.png) |
-
-*(Add your own screenshots to a `screenshots/` folder — a real dashboard image here goes a long way toward showing off the project.)*
-
----
 
 ## 🎯 Roadmap
 
@@ -288,7 +265,7 @@ ALERT_RECIPIENT=admin@example.com
 
 Longer-term ideas (CVE lookup, risk scoring, real-time log streaming, Elasticsearch integration, cloud log monitoring, AI chat assistant) are tracked in [Issues](../../issues) rather than listed here.
 
----
+
 
 ## 💡 Learning Objectives
 
@@ -304,19 +281,12 @@ This project demonstrates concepts including:
 * Database Management
 * Python Programming
 
----
+
 
 ## 🤝 Contributing
 
 Contributions are welcome. If you have ideas for new detection rules, dashboard improvements, AI enhancements, or bug fixes, feel free to fork the repository and submit a pull request.
 
----
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
 
 ## ⭐ Acknowledgements
 
@@ -326,13 +296,12 @@ This project is licensed under the [MIT License](LICENSE).
 * Open Source Cybersecurity Community
 * MITRE ATT&CK Framework (for future mapping concepts)
 
----
+
 
 ## 📬 Contact
 
 If you have any questions or suggestions regarding SentinelIQ, feel free to open an issue or start a discussion in this repository.
 
----
 
 <p align="center">
   <b>🛡️ SentinelIQ — Turning Security Logs into Actionable Intelligence.</b>
