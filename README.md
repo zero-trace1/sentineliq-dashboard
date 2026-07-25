@@ -235,6 +235,19 @@ http://127.0.0.1:5000
 ```
 
 
+## 📚 Documentation
+
+The project documentation is available below:
+
+- [Installation Guide](docs/installation.md)
+- [Usage Guide](docs/usage.md)
+- [AI Analysis](docs/ai-analysis.md)
+- [Screenshots](docs/screenshots.md)
+- [Development Log](docs/development-log.md)
+- [Troubleshooting](docs/troubleshooting.md)
+
+
+
 ## 🔐 Configuration
 
 Before running SentinelIQ, create a `.env` file in the project root with the following variables:
