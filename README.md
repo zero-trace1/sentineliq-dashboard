@@ -20,21 +20,23 @@ The project is designed for students, cybersecurity enthusiasts, and aspiring SO
 * 🌐 Lightweight Flask Web Interface
 
 
-## 🏗️ Project Architecture
+## 🏗️ System Architecture
 
 ```mermaid
 flowchart TD
     A[Security Logs] --> B[Log Parser]
-    B --> C[Detection Engine]
+    B --> C[Threat Detection Engine]
     C --> D[Correlation Engine]
-    D --> E[Database]
-    D --> F[AI Analyst]
-    E --> G[Flask Dashboard]
-    F --> G
-    G --> H[Email Alerts]
-    G --> I[Incident Reports]
-```
+    D --> E[(SQLite Database)]
 
+    E --> F[Flask Dashboard]
+    E --> G[Report Generator]
+    E --> H[AI Analyst]
+
+    H --> F
+    G --> I[Incident Reports]
+    F --> J[Email Notifications]
+```
 
 ## 📂 Project Structure
 
